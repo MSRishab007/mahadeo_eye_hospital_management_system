@@ -6,5 +6,6 @@ RENDER_DATABASE_URL.txt
 *.db
 *.sqlite
 __pycache__/
-.env
+* .env
 .env.local
+**/.env
