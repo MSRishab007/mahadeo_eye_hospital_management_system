@@ -27,7 +27,7 @@ export const SocketProvider = ({ children }) => {
     const runtimeUrl = typeof window !== 'undefined' ? window.__BACKEND_URL__ : undefined;
     const envUrl = process.env.REACT_APP_API_URL || process.env.APP_BACKEND_URL || process.env.VITE_BACKEND_URL;
     const defaultUrl = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
-      ? 'https://eye-hospital-backend.onrender.com'  // Render backend URL (update with your actual service name)
+      ? 'https://backend-python-production-7d12.up.railway.app'  // Render backend URL (update with your actual service name)
       : 'http://localhost:8000';
     
     const SOCKET_URL = (runtimeUrl || envUrl || defaultUrl).replace(/\/$/, '');

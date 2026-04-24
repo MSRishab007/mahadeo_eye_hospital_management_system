@@ -8,7 +8,7 @@ const envUrl = process.env.REACT_APP_API_URL || process.env.APP_BACKEND_URL || p
 // Auto-detect: if NOT localhost, use Render backend; otherwise localhost
 // Update this URL to match your Render backend service name
 const defaultUrl = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
-  ? 'backend-python-production-7d12.up.railway.app'  // Render backend URL (update with your actual service name)
+  ? 'https://backend-python-production-7d12.up.railway.app'  // Render backend URL (update with your actual service name)
   : 'http://localhost:8000';
 
 export const API_BASE_URL = (runtimeUrl || envUrl || defaultUrl).replace(/\/$/, '');
